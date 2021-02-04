@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url('../../assets/fonts/digital-7/digital-7.ttf');
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #D9D7DD;
+}
+
+.clock {
+  border-radius: 100%;
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat";
+  border: 5px solid white;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-div {
+  width: 90%;
+}
+
+.day {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.day-span {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.time {
+  text-align: center;
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.time-span {
+  font-size: 80px;
+  font-family: 'digital-7', sans-serif;
+  letter-spacing: 8px;
+}
+
+.img-div {
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  /* height: 40vmin; */
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
